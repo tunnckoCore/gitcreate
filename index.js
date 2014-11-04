@@ -11,7 +11,7 @@
  * Module dependencies.
  */
 
-var create = require('./lib/create');
+var gitcreate = require('./lib/create');
 
 /**
  * Create a Github repository. Support promises.
@@ -39,7 +39,7 @@ module.exports = function githubCreateRepo(repository, options, callback) {
   if (options.promise) {
     var Promise = require('native-or-another');
     return new Promise(function resolver(resolve, reject) {
-      create(repository, options, function(err, res) {
+      gitcreate(repository, options, function(err, res) {
         if (err) {
           reject(err)
         }

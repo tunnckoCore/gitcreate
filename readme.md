@@ -10,6 +10,11 @@ $ npm install gitcreate -g
 
 ## API
 
+#### gitcreate(repo, [options], [callback])
+- `repo` **{String|Object}** If `repo` is string, must provide `options`
+- `options` **{Object|Function}** Options can be callback function, if repo is object, `promise: false`
+- `callback` **Function** Node-style callback, same as always
+
 
 ## Usage Examples
 > Also you can see [bin/cli.js](./bin/cli.js), [tests](./test) and [examples](./examples) folders for more example usages

@@ -12,7 +12,7 @@
  * Module dependencies.
  */
 
-var create = require('../index');
+var gitcreate = require('../index');
 var meow = require('meow');
 
 var cli = meow({
@@ -56,11 +56,11 @@ var opts = {
 }
 
 if (prom) {
-  create(opts).then(console.log).catch(console.error)
+  gitcreate(opts).then(console.log).catch(console.error)
   return;
 }
 
-create(opts, function(err, res) {
+gitcreate(opts, function(err, res) {
   if (err) {
     console.error(err)
     return;
