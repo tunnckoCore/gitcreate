@@ -41,14 +41,14 @@ var cli = meow({
   ].join('\n')
 })
 
-var name = cli.input[0] || cli.flags.n || cli.flags.name;
+var repo = cli.input[0] || cli.flags.n || cli.flags.name;
 var toks = cli.input[1] || cli.flags.t || cli.flags.token;
 var prom = cli.input[2] || cli.flags.p || cli.flags.promise;
 var home = cli.input[3] || cli.flags.h || cli.flags.homepage;
 var desc = cli.input[4] || cli.flags.d || cli.flags.description;
 
 var opts = {
-  name: name,
+  name: repo,
   token: toks,
   homepage: home,
   description: desc,

@@ -1,5 +1,6 @@
 ## v0.0.0 / November 03, 2014
 - initial commits
+- tests not ready yet
 
 
 [npmjs-url]: http://npm.im/gitclone
