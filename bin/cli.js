@@ -67,12 +67,3 @@ gitcreate(opts, function(err, res) {
   }
   console.log(res)
 })
-
-/**
- * @todo  tests
- * @todo  readme
- * @todo  travis
- * @todo  makefile
- * @pack  package.json
- * @todo  history
- */

@@ -4,8 +4,10 @@
   "description": "Create a Github repository with only `username/repo` and support options",
   "main": "index.js",
   "scripts": {
-    "lint": "jshint ./**/*.js",
-    "test": "node test.js"
+    "lint": "npm install && jshint ./**/*.js",
+    "test": "npm run lint && mocha",
+    "test-cov": "npm test && istanbul cover node_modules/mocha/bin/_mocha",
+    "test-travis": "npm test && istanbul cover node_modules/mocha/bin/_mocha --report lcovonly"
   },
   "author": {
     "name": "Charlike Make Reagent",
@@ -33,6 +35,11 @@
     "native-or-another": "*"
   },
   "devDependencies": {
+    "coveralls": "*",
+    "istanbul": "*",
+    "jshint": "*",
+    "mocha": ">=2",
+    "mocha-lcov-reporter": "*",
     "micropromise": "*"
   },
   "licenses": [{

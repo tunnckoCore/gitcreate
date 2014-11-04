@@ -17,7 +17,7 @@ $ npm install gitcreate -g
 
 
 ## Usage Examples
-> Also you can see [bin/cli.js](./bin/cli.js), [tests](./test) and [examples](./examples) folders for more example usages
+> Also you can see [bin/cli.js](./bin/cli.js), [tests](./test) folders for more example usages
 
 **async promise example 1**
 ```js
@@ -89,6 +89,13 @@ $ gitcreate tunnckoCore/newRepo ghToken false google.com "some long desc"
 $ gitcreate tunnckoCore/gitcreate -p --token "secret" -d "long desc"
 $ gitcreate -p --name tunnckoCore/gitcreate
 $ gitcreate --homepage "www.twitter.com" -t mySecretToken -n tunnckoCore/gitcreate
+```
+
+## Tests
+> As usual - `npm test` **or** if you have [mocha][mocha-url] globally - `mocha`.
+
+```
+$ npm test
 ```
 
 ## Authors & Contributors [![author tips][author-gittip-img]][author-gittip]
