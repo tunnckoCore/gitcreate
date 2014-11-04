@@ -24,6 +24,28 @@ $ npm install gitcreate -g
 
 ```
 $ gitcreate --help
+
+  Create a Github repository with only `username/repo` and support options
+
+  Options
+    --help                show this help
+    --version             current version of package
+    -n | --name           username/reponame - tunnckoCore/myNewRepo
+    -t | --token          github token for auth
+    -p | --promise        handle response with promise (boolean)
+    -h | --homepage       homepage of repository
+    -d | --description    set description for the repo
+
+  Usage
+    gitcreate <userRepo> <token> [promise] [homepage] [description]
+    gitcreate -p -n <userRepo> -t <token> -h [homepage] -d [description]
+
+  Examples
+    gitcreate tunnckoCore/awesomeRepo githubTokenHere
+    gitcreate tunnckoCore/newRepo jk3hkj2h false http://google.com "some long desc"
+    gitcreate tunnckoCore/gitcreate -p --token "secret" -h "google.com" -d "long desc"
+    gitcreate -p --name tunnckoCore/gitcreate
+    gitcreate --homepage "www.twitter.com" -t mySecretToken -n tunnckoCore/gitcreate
 ```
 
 ## Usage as module
