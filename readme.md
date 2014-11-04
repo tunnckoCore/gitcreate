@@ -6,6 +6,7 @@
 
 ```
 $ npm install gitcreate -g
+$ gitcreate --help
 ```
 
 ## API
