@@ -1,7 +1,7 @@
 {
   "name": "gitcreate",
   "version": "0.0.1",
-  "description": "Create a Github repository with only `username/repo` and support options",
+  "description": "Create a Github repository with only `username/repo`. Support CLI and options.",
   "main": "index.js",
   "scripts": {
     "lint": "npm install && jshint ./**/*.js",
