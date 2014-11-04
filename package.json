@@ -1,6 +1,6 @@
 {
   "name": "gitcreate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create a Github repository with only `username/repo`. Support CLI and options.",
   "main": "index.js",
   "scripts": {

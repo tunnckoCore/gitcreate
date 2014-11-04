@@ -1,6 +1,10 @@
-## v0.0.1 / November 04, 2014
+## v0.0.2 / November 04, 2014
+- build passing
 - tests not ready yet
+
+## v0.0.1 / November 04, 2014
 - npm publish
+- tests not ready yet
 
 ## v0.0.0 / November 04, 2014
 - initial commits
