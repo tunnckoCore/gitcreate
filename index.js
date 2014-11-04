@@ -11,7 +11,7 @@
  * Module dependencies.
  */
 
-var gitcreate = require('./lib/create');
+var gitcreate = require('./lib/gitcreate');
 
 /**
  * Create a Github repository. Support promises.

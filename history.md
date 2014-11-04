@@ -1,12 +1,17 @@
-## v0.0.2 / November 04, 2014
+## v0.0.3 / November 4, 2014
+- style-guide driven changes
+- package.json edits
+- naming conventions, folders
+
+## v0.0.2 / November 4, 2014
 - build passing
 - tests not ready yet
 
-## v0.0.1 / November 04, 2014
+## v0.0.1 / November 4, 2014
 - npm publish
 - tests not ready yet
 
-## v0.0.0 / November 04, 2014
+## v0.0.0 / November 4, 2014
 - initial commits
 - tests not ready yet
 

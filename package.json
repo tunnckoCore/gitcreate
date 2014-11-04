@@ -1,7 +1,7 @@
 {
   "name": "gitcreate",
   "version": "0.0.2",
-  "description": "Create a Github repository with only `username/repo`. Support CLI and options.",
+  "description": "Create a Github repository with only `username/repo`. Support CLI.",
   "main": "index.js",
   "scripts": {
     "lint": "npm install && jshint ./**/*.js",
@@ -49,7 +49,12 @@
     "type": "MIT",
     "url": "https://github.com/tunnckoCore/gitcreate/blob/master/license.md"
   }],
+  "engines": {
+    "node": ">= 0.10.0",
+    "npm": ">= 1.4.28"
+  },
   "bin": {
     "gitcreate": "bin/cli.js"
-  }
+  },
+  "preferGlobal": "true"
 }
