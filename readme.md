@@ -49,9 +49,36 @@ $ gitcreate --help
 ```
 
 ## Usage as module
+**async callback example**
 ```js
 var gitcreate = require('gitcreate');
+var options = {
+  name: 'username/reponame',
+  token: 'my super secret token',
+  homepage: 'http://windowsucks.com',
+  description: 'some non-default description',
+  promise: false
+}
+gitcreate(options, function(err, res) {
+  if (err) {
+    console.error(err)
+    return;
+  }
+  //=> res.response = request response object
+  //=> res.visit = final url for the repo
+  console.log(res.visit);
+})
+```
 
+**async promise example**
+```js
+var gitcreate = require('gitcreate');
+var options = {
+  token: 'my super secret token',
+  description: 'some non-default description',
+  promise: true
+}
+gitcreate('username/reponame', options).then(console.log).catch(console.error)
 ```
 
 ## Authors & Contributors [![author tips][author-gittip-img]][author-gittip]
