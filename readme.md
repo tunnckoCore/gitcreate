@@ -1,5 +1,5 @@
 # gitcreate [![NPM version][npmjs-shields]][npmjs-url] [![Build Status][travis-img]][travis-url] [![Dependency Status][depstat-img]][depstat-url] [![Coveralls][coveralls-shields]][coveralls-url]
-> Clone a Github repository with only `username/repo` and support options
+> Create a Github repository with only `username/repo` and support options
 
 ## Install [![Nodei.co stats][npmjs-install]][npmjs-url]
 > Install with [npm](https://npmjs.org)
