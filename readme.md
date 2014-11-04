@@ -23,7 +23,7 @@ $ gitcreate --help
 
 
 ## Usage Examples
-> Also you can see [bin/cli.js](./bin/cli.js), [tests](./test/index.js) for more example usages
+> Also you can see [bin/cli.js](./bin/cli.js), [tests](./test/test.js) for more example usages
 
 **async promise example 1**
 ```js
