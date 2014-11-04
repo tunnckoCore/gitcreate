@@ -12,7 +12,12 @@ $ npm install gitcreate -g
 
 #### gitcreate(repo, [options], [callback])
 - `repo` **{String|Object}** If `repo` is string, must provide `options`
-- `options` **{Object|Fn}** Options can be callback function, if repo is object and `.promise: false`
+- `options` **{Object|Fn}** Options can be callback, if repo is object and `.promise: false`
+  - `name` **{String}** User and name of the repo you want to create (as user/repo)
+  - `token` **{String}** Github token to auth for api calls
+  - `promise` **{Boolean}** Handle response with promise - true/false or empty
+  - `homepage` **{String}** Website that will be set for the repository
+  - `description` **{String}** Description for the repo
 - `callback` **{Fn}** Node-style callback, same as always
 
 
