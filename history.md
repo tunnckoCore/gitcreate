@@ -1,23 +1,27 @@
-## v0.0.0 / November 03, 2014
+## v0.0.1 / November 04, 2014
+- tests not ready yet
+- npm publish
+
+## v0.0.0 / November 04, 2014
 - initial commits
 - tests not ready yet
 
 
-[npmjs-url]: http://npm.im/gitclone
-[npmjs-shields]: http://img.shields.io/npm/v/gitclone.svg
-[npmjs-install]: https://nodei.co/npm/gitclone.svg?mini=true
+[npmjs-url]: http://npm.im/gitcreate
+[npmjs-shields]: http://img.shields.io/npm/v/gitcreate.svg
+[npmjs-install]: https://nodei.co/npm/gitcreate.svg?mini=true
 
-[coveralls-url]: https://coveralls.io/r/tunnckoCore/gitclone?branch=master
-[coveralls-shields]: https://img.shields.io/coveralls/tunnckoCore/gitclone.svg
+[coveralls-url]: https://coveralls.io/r/tunnckoCore/gitcreate?branch=master
+[coveralls-shields]: https://img.shields.io/coveralls/tunnckoCore/gitcreate.svg
 
-[license-url]: https://github.com/tunnckoCore/gitclone/blob/master/license.md
+[license-url]: https://github.com/tunnckoCore/gitcreate/blob/master/license.md
 [license-img]: http://img.shields.io/badge/license-MIT-blue.svg
 
-[travis-url]: https://travis-ci.org/tunnckoCore/gitclone
-[travis-img]: https://travis-ci.org/tunnckoCore/gitclone.svg?branch=master
+[travis-url]: https://travis-ci.org/tunnckoCore/gitcreate
+[travis-img]: https://travis-ci.org/tunnckoCore/gitcreate.svg?branch=master
 
-[depstat-url]: https://david-dm.org/tunnckoCore/gitclone
-[depstat-img]: https://david-dm.org/tunnckoCore/gitclone.svg
+[depstat-url]: https://david-dm.org/tunnckoCore/gitcreate
+[depstat-img]: https://david-dm.org/tunnckoCore/gitcreate.svg
 
 [author-gittip-img]: http://img.shields.io/gittip/tunnckoCore.svg
 [author-gittip]: https://www.gittip.com/tunnckoCore
