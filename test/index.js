@@ -10,7 +10,7 @@
 /**
  * Module dependencies.
  */
-var gitcreate = require('../index');
+//var gitcreate = require('../index');
 
 describe('gitcreate', function () {
 
