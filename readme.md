@@ -1,4 +1,4 @@
-# gitcreate [![NPM version][npmjs-shields]][npmjs-url] [![Build Status][travis-img]][travis-url] [![Dependency Status][depstat-img]][depstat-url]
+# gitcreate [![NPM version][npmjs-shields]][npmjs-url] [![Build Status][travis-img]][travis-url] [![Dependency Status][depstat-img]][depstat-url] [![Coveralls][coveralls-shields]][coveralls-url]
 > Clone a Github repository with only `username/repo` and support options
 
 ## Install [![Nodei.co stats][npmjs-install]][npmjs-url]
@@ -13,11 +13,11 @@ $ npm install gitcreate -g
 
 - `--help`
 - `--version`
-- `-n`|`--name`|`1st arg`
-- `-t`|`--token`|`2nd arg`
-- `-p`|`--promise`|`3rd arg`
-- `-h`|`--homepage`|`4th arg`
-- `-d`|`--description`|`5th arg`
+- `-n`|`--name`|`1st arg` **{String}** User and name of the repo you want to create (as user/repo)
+- `-t`|`--token`|`2nd arg` **{String}** Github token to auth for api calls
+- `-p`|`--promise`|`3rd arg` **{Boolean}** Handle response with promise - true/false or empty
+- `-h`|`--homepage`|`4th arg` **{String}** website that will be set for the repository
+- `-d`|`--description`|`5th arg` **{String}** description for the repo
 
 
 ## CLI Usage
@@ -28,13 +28,13 @@ $ gitcreate --help
   Create a Github repository with only `username/repo` and support options
 
   Options
-    --help                show this help
-    --version             current version of package
-    -n | --name           username/reponame - tunnckoCore/myNewRepo
-    -t | --token          github token for auth
-    -p | --promise        handle response with promise (boolean)
-    -h | --homepage       homepage of repository
-    -d | --description    set description for the repo
+    --help                Show this help
+    --version             Current version of package
+    -n | --name           User and name of the repo you want to create (as user/repo)
+    -t | --token          Github token to auth for api calls
+    -p | --promise        Handle response with promise - true/false or empty
+    -h | --homepage       Website that will be set for the repository
+    -d | --description    Description for the repo
 
   Usage
     gitcreate <userRepo> <token> [promise] [homepage] [description]
@@ -42,8 +42,8 @@ $ gitcreate --help
 
   Examples
     gitcreate tunnckoCore/awesomeRepo githubTokenHere
-    gitcreate tunnckoCore/newRepo jk3hkj2h false http://google.com "some long desc"
-    gitcreate tunnckoCore/gitcreate -p --token "secret" -h "google.com" -d "long desc"
+    gitcreate tunnckoCore/newRepo ghToken false google.com "some long desc"
+    gitcreate tunnckoCore/gitcreate -p --token "secret" -d "long desc"
     gitcreate -p --name tunnckoCore/gitcreate
     gitcreate --homepage "www.twitter.com" -t mySecretToken -n tunnckoCore/gitcreate
 ```

@@ -19,13 +19,13 @@ var cli = meow({
   pkg: '../package.json',
   help: [
     'Options',
-    '  --help                show this help',
-    '  --version             current version of package',
-    '  -n | --name           username/reponame - tunnckoCore/myNewRepo',
-    '  -t | --token          github token for auth',
-    '  -p | --promise        handle response with promise (boolean)',
-    '  -h | --homepage       homepage of repository',
-    '  -d | --description    set description for the repo',
+    '  --help                Show this help',
+    '  --version             Current version of package',
+    '  -n | --name           User and name of the repo you want to create (as user/repo)',
+    '  -t | --token          Github token to auth for api calls',
+    '  -p | --promise        Handle response with promise - true/false or empty',
+    '  -h | --homepage       Website that will be set for the repository',
+    '  -d | --description    Description for the repo',
     '',
     'Usage',
     '  gitcreate <userRepo> <token> [promise] [homepage] [description]',
@@ -41,11 +41,11 @@ var cli = meow({
   ].join('\n')
 })
 
-var name = cli.input[0] || cli.n || cli.name;
-var toks = cli.input[1] || cli.t || cli.token;
-var prom = cli.input[2] || cli.p || cli.promise;
-var home = cli.input[3] || cli.h || cli.homepage;
-var desc = cli.input[4] || cli.d || cli.description;
+var name = cli.input[0] || cli.flags.n || cli.flags.name;
+var toks = cli.input[1] || cli.flags.t || cli.flags.token;
+var prom = cli.input[2] || cli.flags.p || cli.flags.promise;
+var home = cli.input[3] || cli.flags.h || cli.flags.homepage;
+var desc = cli.input[4] || cli.flags.d || cli.flags.description;
 
 var opts = {
   name: name,
