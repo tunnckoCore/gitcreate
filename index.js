@@ -13,6 +13,13 @@
 
 var create = require('./lib/create');
 
+/**
+ * Create a Github repository. Support promises.
+ * @param  {String|Object} `repository`
+ * @param  {Object|Function} `options`
+ * @param  {Function|Undefined} `callback`
+ * @return {undefined}
+ */
 module.exports = function githubCreateRepo(repository, options, callback) {
   if (typeof repository !== 'string' && typeof repository !== 'object') {
     throw new TypeError('First argument must be object or string')

@@ -8,47 +8,12 @@
 $ npm install gitcreate -g
 ```
 
-## Flags
-> Flags can be used in any order.
-
-- `--help`
-- `--version`
-- `-n`|`--name`|`1st arg` **{String}** User and name of the repo you want to create (as user/repo)
-- `-t`|`--token`|`2nd arg` **{String}** Github token to auth for api calls
-- `-p`|`--promise`|`3rd arg` **{Boolean}** Handle response with promise - true/false or empty
-- `-h`|`--homepage`|`4th arg` **{String}** website that will be set for the repository
-- `-d`|`--description`|`5th arg` **{String}** description for the repo
+## API
 
 
-## CLI Usage
+## Usage Examples
+> Also you can see [bin/cli.js](./bin/cli.js), [tests](./test) and [examples](./examples) folders for more example usages
 
-```
-$ gitcreate --help
-
-  Create a Github repository with only `username/repo` and support options
-
-  Options
-    --help                Show this help
-    --version             Current version of package
-    -n | --name           User and name of the repo you want to create (as user/repo)
-    -t | --token          Github token to auth for api calls
-    -p | --promise        Handle response with promise - true/false or empty
-    -h | --homepage       Website that will be set for the repository
-    -d | --description    Description for the repo
-
-  Usage
-    gitcreate <userRepo> <token> [promise] [homepage] [description]
-    gitcreate -p -n <userRepo> -t <token> -h [homepage] -d [description]
-
-  Examples
-    gitcreate tunnckoCore/awesomeRepo githubTokenHere
-    gitcreate tunnckoCore/newRepo ghToken false google.com "some long desc"
-    gitcreate tunnckoCore/gitcreate -p --token "secret" -d "long desc"
-    gitcreate -p --name tunnckoCore/gitcreate
-    gitcreate --homepage "www.twitter.com" -t mySecretToken -n tunnckoCore/gitcreate
-```
-
-## Usage as module
 **async callback example**
 ```js
 var gitcreate = require('gitcreate');
@@ -78,7 +43,34 @@ var options = {
   description: 'some non-default description',
   promise: true
 }
-gitcreate('username/reponame', options).then(console.log).catch(console.error)
+gitcreate('username/reponame', options)
+  .then(console.log)
+  .catch(console.error)
+```
+
+## CLI Usage
+```
+$ gitcreate --help
+```
+
+### Flags
+> Flags can be used in any order.
+
+- `--help`
+- `--version`
+- `-n`|`--name`|`1st arg` **{String}** User and name of the repo you want to create (as user/repo)
+- `-t`|`--token`|`2nd arg` **{String}** Github token to auth for api calls
+- `-p`|`--promise`|`3rd arg` **{Boolean}** Handle response with promise - true/false or empty
+- `-h`|`--homepage`|`4th arg` **{String}** website that will be set for the repository
+- `-d`|`--description`|`5th arg` **{String}** description for the repo
+
+**Example usage**
+```
+$ gitcreate tunnckoCore/awesomeRepo githubTokenHere
+$ gitcreate tunnckoCore/newRepo ghToken false google.com "some long desc"
+$ gitcreate tunnckoCore/gitcreate -p --token "secret" -d "long desc"
+$ gitcreate -p --name tunnckoCore/gitcreate
+$ gitcreate --homepage "www.twitter.com" -t mySecretToken -n tunnckoCore/gitcreate
 ```
 
 ## Authors & Contributors [![author tips][author-gittip-img]][author-gittip]
