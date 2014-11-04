@@ -12,12 +12,25 @@ $ npm install gitcreate -g
 
 #### gitcreate(repo, [options], [callback])
 - `repo` **{String|Object}** If `repo` is string, must provide `options`
-- `options` **{Object|Function}** Options can be callback function, if repo is object, `promise: false`
-- `callback` **Function** Node-style callback, same as always
+- `options` **{Object|Fn}** Options can be callback function, if repo is object and `.promise: false`
+- `callback` **{Fn}** Node-style callback, same as always
 
 
 ## Usage Examples
 > Also you can see [bin/cli.js](./bin/cli.js), [tests](./test) and [examples](./examples) folders for more example usages
+
+**async promise example 1**
+```js
+var gitcreate = require('gitcreate');
+var options = {
+  token: 'my super secret token',
+  name: 'username/reponame',
+  promise: true
+}
+gitcreate(options)
+  .then(console.log)
+  .catch(console.error)
+```
 
 **async callback example**
 ```js
@@ -40,7 +53,7 @@ gitcreate(options, function(err, res) {
 })
 ```
 
-**async promise example**
+**async promise example 2**
 ```js
 var gitcreate = require('gitcreate');
 var options = {
