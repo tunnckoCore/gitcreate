@@ -16,8 +16,14 @@
 - tests not ready yet
 
 
+[downloads-img]: http://img.shields.io/npm/dm/gitcreate.svg
+[npm-required-version-img]: http://img.shields.io/badge/npm-%3E=%201.4.28-blue.svg
+[node-required-version-img]: https://img.shields.io/node/v/gitcreate.svg
+[node-required-version-url]: http://nodejs.org/download/
+
 [npmjs-url]: http://npm.im/gitcreate
-[npmjs-shields]: http://img.shields.io/npm/v/gitcreate.svg
+[npmjs-fury]: https://badge.fury.io/js/gitcreate.svg
+[npmjs-shields]: https://img.shields.io/npm/v/gitcreate.svg
 [npmjs-install]: https://nodei.co/npm/gitcreate.svg?mini=true
 
 [coveralls-url]: https://coveralls.io/r/tunnckoCore/gitcreate?branch=master
@@ -32,13 +38,16 @@
 [depstat-url]: https://david-dm.org/tunnckoCore/gitcreate
 [depstat-img]: https://david-dm.org/tunnckoCore/gitcreate.svg
 
+[ferver-img]: http://img.shields.io/badge/using-ferver-585858.svg
+[ferver-url]: https://github.com/jonathanong/ferver
+
 [author-gittip-img]: http://img.shields.io/gittip/tunnckoCore.svg
 [author-gittip]: https://www.gittip.com/tunnckoCore
 [author-github]: https://github.com/tunnckoCore
 [author-twitter]: https://twitter.com/tunnckoCore
-
 [author-website]: http://www.whistle-bg.tk
 [author-npmjs]: https://npmjs.org/~tunnckocore
+[author-more]: http://j.mp/1stW47C
 
 [cobody-url]: https://github.com/tj/co-body
 [mocha-url]: https://github.com/tj/mocha

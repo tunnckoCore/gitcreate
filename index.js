@@ -10,11 +10,12 @@
 /**
  * Module dependencies.
  */
-
 var gitcreate = require('./lib/gitcreate');
 
 /**
- * Create a Github repository. Support promises.
+ * Create a Github repository with only `username/repo`.
+ * Support CLI and Promises.
+ * 
  * @param  {String|Object} `repository`
  * @param  {Object|Function} `options`
  * @param  {Function|Undefined} `callback`
@@ -35,6 +36,12 @@ module.exports = function githubCreateRepo(repository, options, callback) {
     repository = repository.name;
   }
 
+  if (!callback && typeof options === 'function') {
+    callback = options
+    options = {};
+  }
+
+  options = typeof options === 'object' ? options : {}
 
   if (options.promise) {
     var Promise = require('native-or-another');
@@ -52,5 +59,5 @@ module.exports = function githubCreateRepo(repository, options, callback) {
     throw new TypeError('Must have callback')
   }
 
-  create(repository, options, callback);
-}
+  gitcreate(repository, options, callback);
+};

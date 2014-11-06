@@ -1,13 +1,13 @@
 {
   "name": "gitcreate",
   "version": "0.0.3",
-  "description": "Create a Github repository with only `username/repo`. Support CLI.",
+  "description": "Create a Github repository with only `username/repo`. Support CLI and Promises.",
   "main": "index.js",
   "scripts": {
-    "lint": "npm install && jshint ./**/*.js",
+    "lint": "npm install && jshint bin/*.js lib/*.js test/*.js index.js",
     "test": "npm run lint && mocha",
-    "test-cov": "npm test && istanbul cover node_modules/mocha/bin/_mocha",
-    "test-travis": "npm test && istanbul cover node_modules/mocha/bin/_mocha --report lcovonly"
+    "test-cov": "npm test && istanbul cover _mocha",
+    "test-travis": "npm test && istanbul cover _mocha --report lcovonly"
   },
   "author": {
     "name": "Charlike Make Reagent",
@@ -20,6 +20,8 @@
     "url": "git://github.com/tunnckoCore/gitcreate.git"
   },
   "keywords": [
+    "promises",
+    "promise",
     "git",
     "cli",
     "support",

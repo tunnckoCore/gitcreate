@@ -23,29 +23,38 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 
 
-[npmjs-url]: http://npm.im/gitclone
-[npmjs-shields]: http://img.shields.io/npm/v/gitclone.svg
-[npmjs-install]: https://nodei.co/npm/gitclone.svg?mini=true
+[downloads-img]: http://img.shields.io/npm/dm/gitcreate.svg
+[npm-required-version-img]: http://img.shields.io/badge/npm-%3E=%201.4.28-blue.svg
+[node-required-version-img]: https://img.shields.io/node/v/gitcreate.svg
+[node-required-version-url]: http://nodejs.org/download/
 
-[coveralls-url]: https://coveralls.io/r/tunnckoCore/gitclone?branch=master
-[coveralls-shields]: https://img.shields.io/coveralls/tunnckoCore/gitclone.svg
+[npmjs-url]: http://npm.im/gitcreate
+[npmjs-fury]: https://badge.fury.io/js/gitcreate.svg
+[npmjs-shields]: https://img.shields.io/npm/v/gitcreate.svg
+[npmjs-install]: https://nodei.co/npm/gitcreate.svg?mini=true
 
-[license-url]: https://github.com/tunnckoCore/gitclone/blob/master/license.md
+[coveralls-url]: https://coveralls.io/r/tunnckoCore/gitcreate?branch=master
+[coveralls-shields]: https://img.shields.io/coveralls/tunnckoCore/gitcreate.svg
+
+[license-url]: https://github.com/tunnckoCore/gitcreate/blob/master/license.md
 [license-img]: http://img.shields.io/badge/license-MIT-blue.svg
 
-[travis-url]: https://travis-ci.org/tunnckoCore/gitclone
-[travis-img]: https://travis-ci.org/tunnckoCore/gitclone.svg?branch=master
+[travis-url]: https://travis-ci.org/tunnckoCore/gitcreate
+[travis-img]: https://travis-ci.org/tunnckoCore/gitcreate.svg?branch=master
 
-[depstat-url]: https://david-dm.org/tunnckoCore/gitclone
-[depstat-img]: https://david-dm.org/tunnckoCore/gitclone.svg
+[depstat-url]: https://david-dm.org/tunnckoCore/gitcreate
+[depstat-img]: https://david-dm.org/tunnckoCore/gitcreate.svg
+
+[ferver-img]: http://img.shields.io/badge/using-ferver-585858.svg
+[ferver-url]: https://github.com/jonathanong/ferver
 
 [author-gittip-img]: http://img.shields.io/gittip/tunnckoCore.svg
 [author-gittip]: https://www.gittip.com/tunnckoCore
 [author-github]: https://github.com/tunnckoCore
 [author-twitter]: https://twitter.com/tunnckoCore
-
 [author-website]: http://www.whistle-bg.tk
 [author-npmjs]: https://npmjs.org/~tunnckocore
+[author-more]: http://j.mp/1stW47C
 
 [cobody-url]: https://github.com/tj/co-body
 [mocha-url]: https://github.com/tj/mocha
