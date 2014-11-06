@@ -1,3 +1,7 @@
+## v0.0.4 / November 6, 2014
+- style-guide driven changes
+- edit `Makefile`, `readme`
+
 ## v0.0.3 / November 4, 2014
 - style-guide driven changes
 - package.json edits
