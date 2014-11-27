@@ -1,7 +1,7 @@
 {
   "name": "gitcreate",
   "description": "Create a Github repository with only `username/repo`. Support CLI and Promises.",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "scripts": {
     "lint": "npm install && node_modules/.bin/jshint . && node_modules/.bin/jscs . --reporter inline",
     "test": "npm run lint && node_modules/.bin/mocha",

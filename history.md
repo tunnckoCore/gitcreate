@@ -1,3 +1,8 @@
+## v1.0.0 / November 27, 2014
+- init release
+- force new code style
+- switch `superagent` with `got`
+
 ## v0.0.4 / November 6, 2014
 - style-guide driven changes
 - edit `Makefile`, `readme`
