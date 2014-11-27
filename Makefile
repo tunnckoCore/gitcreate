@@ -1,23 +1,34 @@
-install:
-	npm install
+# Makefile <https://github.com/tunnckoCore/dotfiles>
+#
+# Copyright (c) 2014 Charlike Mike Reagent, contributors.
+# Released under the MIT license.
+#
+
+JSCS      = node_modules/.bin/jscs
+MOCHA     = node_modules/.bin/mocha
+_MOCHA    = node_modules/.bin/_mocha
+JSHINT    = node_modules/.bin/jshint
+ISTANBUL  = node_modules/.bin/istanbul
+COVERALLS = node_modules/.bin/coveralls
 
 lint:
-	$(MAKE) install
-	jshint bin/*.js lib/*.js test/*.js index.js
+	npm install
+	${JSHINT} .
+	${JSCS} . --reporter inline
 
-test:
-	$(MAKE) lint
-	@NODE_ENV=test mocha
+test: lint
+	${MOCHA} --require should
 
-test-cov:
-	$(MAKE) test
-	@NODE_ENV=test ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha
+test-cov: lint
+	${ISTANBUL} cover ${_MOCHA} -- --require should
 
-test-travis:
-	$(MAKE) test
-	@NODE_ENV=test ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly
+test-travis: lint
+	${ISTANBUL} cover ${_MOCHA} --report lcovonly -- --require should
+	
+coveralls: test-travis
+	cat ./coverage/lcov.info | ${COVERALLS}
 
 clean:
-	rm -rf build components node_modules coverage
+	rm -rf node_modules coverage
 
-.PHONY: test lint
+.PHONY: lint test coveralls clean

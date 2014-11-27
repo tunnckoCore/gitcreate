@@ -39,7 +39,7 @@ var cli = meow({
     '  gitcreate --homepage "www.twitter.com" -t mySecretToken -n tunnckoCore/gitcreate',
     ''
   ].join('\n')
-})
+});
 
 var repo = cli.input[0] || cli.flags.n || cli.flags.name;
 var toks = cli.input[1] || cli.flags.t || cli.flags.token;
@@ -55,15 +55,14 @@ var opts = {
   promise: prom
 }
 
-if (prom) {
-  gitcreate(opts).then(console.log).catch(console.error)
-  return;
+if (opts.prom) {
+  gitcreate(opts).then(console.log).catch(console.error);
+} else {
+  gitcreate(opts, function(err, res) {
+    if (err) {
+      console.error(err)
+      return;
+    }
+    console.log(res);
+  });
 }
-
-gitcreate(opts, function(err, res) {
-  if (err) {
-    console.error(err)
-    return;
-  }
-  console.log(res)
-})

@@ -15,11 +15,11 @@ var gitcreate = require('./lib/gitcreate');
 /**
  * Create a Github repository with only `username/repo`.
  * Support CLI and Promises.
- * 
+ *
  * @param  {String|Object} `repository`
  * @param  {Object|Function} `options`
  * @param  {Function|Undefined} `callback`
- * @return {undefined}
+ * @return {undefined|Promise}
  */
 module.exports = function githubCreateRepo(repository, options, callback) {
   if (typeof repository !== 'string' && typeof repository !== 'object') {
@@ -54,7 +54,7 @@ module.exports = function githubCreateRepo(repository, options, callback) {
       })
     });
   }
-  
+
   if (typeof callback !== 'function') {
     throw new TypeError('Must have callback')
   }
