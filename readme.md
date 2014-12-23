@@ -2,6 +2,8 @@
 > Create a Github repository with only `username/repo`.  
 Support CLI and Promises.
 
+### v1.0.0 is partially broken, use v0.0.4 for now
+
 ## Install [![Nodei.co stats][npmjs-install]][npmjs-url]
 > Install with [npm](https://npmjs.org)
 
